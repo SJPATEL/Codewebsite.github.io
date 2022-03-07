@@ -637,6 +637,14 @@ body.all-html-P{
     font-weight: bold;
     background-color: black;
 }
+/* ######################## status code ######################  */
+.html-source .container .videos li .s-h1{
+    font-size: 2.7rem;
+    border-bottom: 4px solid red;
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+}
 /* ######################### midiya qurey ###########################  */
 @media (max-width:360px)
 {   
@@ -771,6 +779,10 @@ body.all-html-P{
     }
     .html-source .container .videos li h1 {
         font-size: 1.8rem;
+    }
+    .html-source .container .videos li .s-h1 {
+        font-size: 1.8rem;
+        width: 63%;
     }
     .html-source .container .videos li {
         font-size: 1.3rem;
@@ -928,6 +940,10 @@ body.all-html-P{
     }
     .html-source .container .videos li h1 {
         font-size: 1.8rem;
+    }
+    .html-source .container .videos li .s-h1 {
+        font-size: 1.8rem;
+        width: 60%;
     }
     .html-source .container .videos li {
         font-size: 1.3rem;
@@ -1094,6 +1110,10 @@ body.all-html-P{
     .html-source .container .videos li h1 {
         font-size: 1.8rem;
     }
+    .html-source .container .videos li .s-h1 {
+        font-size: 1.8rem;
+        width: 50%;
+    }
     .html-source .container .videos li {
         font-size: 1.3rem;
         font-weight: bold;
@@ -1259,6 +1279,10 @@ body.all-html-P{
     }
     .html-source .container .videos li h1 {
         font-size: 1.8rem;
+    }
+    .html-source .container .videos li .s-h1 {
+        font-size: 1.8rem;
+        width: 40%;
     }
     .html-source .container .videos li {
         font-size: 1.3rem;
@@ -1429,6 +1453,10 @@ body.all-html-P{
     .html-source .container .videos li h1 {
         font-size: 1.8rem;
     }
+    .html-source .container .videos li .s-h1 {
+        font-size: 1.8rem;
+        width: 30%;
+    }
     .html-source .container .videos li {
         font-size: 1.3rem;
         font-weight: bold;
@@ -1593,6 +1621,10 @@ body.all-html-P{
     }
     .html-source .container .videos li h1 {
         font-size: 2rem;
+    }
+    .html-source .container .videos li .s-h1 {
+        font-size: 2rem;
+        width: 30%;
     }
     .html-source .container .videos li {
         font-size: 1.6rem;
@@ -1762,6 +1794,10 @@ body.all-html-P{
     .html-source .container .videos li h1 {
         font-size: 2rem;
     }
+    .html-source .container .videos li .s-h1 {
+        font-size: 2rem;
+        width: 25%;
+    }
     .html-source .container .videos li {
         font-size: 1.6rem;
         font-weight: bold;
@@ -1929,6 +1965,10 @@ body.all-html-P{
     }
     .html-source .container .videos li h1 {
         font-size: 2rem;
+    }
+    .html-source .container .videos li .s-h1 {
+        font-size: 2rem;
+        width: 25%;
     }
     .html-source .container .videos li {
         font-size: 1.6rem;
@@ -2098,6 +2138,10 @@ body.all-html-P{
     .html-source .container .videos li h1 {
         font-size: 2rem;
     }
+    .html-source .container .videos li .s-h1 {
+        font-size: 2rem;
+        width: 25%;
+    }
     .html-source .container .videos li {
         font-size: 1.6rem;
         font-weight: bold;
@@ -2265,6 +2309,10 @@ body.all-html-P{
     }
     .html-source .container .videos li h1 {
         font-size: 2rem;
+    }
+    .html-source .container .videos li .s-h1 {
+        font-size: 2rem;
+        width: 20%;
     }
     .html-source .container .videos li {
         font-size: 1.6rem;
@@ -2434,6 +2482,10 @@ body.all-html-P{
     .html-source .container .videos li h1 {
         font-size: 2rem;
     }
+    .html-source .container .videos li .s-h1 {
+        font-size: 2rem;
+        width: 20%;
+    }
     .html-source .container .videos li {
         font-size: 1.6rem;
         font-weight: bold;
@@ -2601,6 +2653,10 @@ body.all-html-P{
     }
     .html-source .container .videos li h1 {
         font-size: 2rem;
+    }
+    .html-source .container .videos li .s-h1 {
+        font-size: 2rem;
+        width: 20%;
     }
     .html-source .container .videos li {
         font-size: 1.6rem;
