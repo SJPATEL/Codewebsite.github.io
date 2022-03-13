@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/prism.css">
+    <script src="/prism.js"></script>
+    <title>Status Code</title>
+</head>
+<body>
+    <div class="html-source">
+        <h1 class="title text-green">Status Code</h1>
+        <div class="container">
+            <ul class="videos">
+                <li class="video-1">
+                    <h1 class="s-h1">source code 27 python</h1>
+                    <pre class="language-python"><code>#####shrch find charcter
+from tkinter import *
+from tkinter import ttk
+win=Tk()
+# win.geometry('500x800')
+# pdb.set_trace()s
+label_fram=ttk.Frame(win)
+label=ttk.Label(label_fram,text='Text to find').pack(side=LEFT)
+entry=ttk.Entry(label_fram,width=20)
+entry.pack(side=LEFT,fill=BOTH,expand=1)
+entry.focus_set()
+btn=Button(label_fram,text='Find')
+btn.pack(side=RIGHT)
+label_fram.pack(side=TOP)
+text=Text(win)
+text.insert('1.0','''type your text''')
+text.pack(side=BOTTOM)
+def find():
+
+    text.tag_remove('found','1.0',END)
+    s=entry.get()
+    if s:
+        idx='1.0'
+        while 1:
+            idx=text.search(s,idx,nocase=1,stopindex=END)
+            if not idx: break
+            listindx='%s+%dc'%(idx,len(s))
+            text.tag_add('found',idx,listindx)
+            idx=listindx
+        text.tag_config('found',foreground='red')
+    entry.focus_set()
+btn.config(command=find)
+
+win.mainloop()
+
+### chacky
+from tkinter import *
+from tkinter import ttk
+win=Tk()
+
+def checkkey(event):
+    value=event.widget.get()
+    print(value)
+    if value == '':
+        data= l
+    else:
+        data=[]
+        for item in l:
+            if value.lower() in item.lower():
+                data.append(item)
+    update(data)
+
+def update(data):
+    lb.delete(0,'end')
+
+    for item in data:
+        lb.insert('end',item)
+
+l=('c','c++','Java','Python','Perl','PHP','ASP','JS')
+e=ttk.Entry(win)
+e.pack()
+e.bind('&lt;KeyRelease>',checkkey)
+# e.bind('&lt;KeyRelease>',checkkey)
+
+lb=Listbox(win)
+lb.pack()
+update(l)
+win.mainloop()</code></pre>
+               </li>
+           </ul>
+        </div>
+    </div>
+</body>
+</html>
