@@ -23,8 +23,93 @@
                     -there are two topice involve in program:-  <br>
                        1.dising calculater use for Tk-inter libarary in python <br>
                        2.Then enter the calculate code <br>
-                    <span class="text-red">=>open code</span>
-                    <a href="/status code/status10.html" class="far fa-file-pdf text-red" target="_blank"></a>
+                    <span class="text-red">=>source code 10 python coding</span>
+                    <pre class="language-python"><code>from tkinter import *
+from tkinter import ttk
+
+tem_var=''
+def prass(num):
+     global tem_var
+     tem_var=tem_var+str(num)
+     var.set(tem_var)
+def equlprass():
+     try:
+          global tem_var
+          total=str(eval(tem_var))
+          var.set(total)
+          tem_var=''
+     except:
+          var.set('error')
+          tem_var=''
+def clear():
+     global tem_var
+     tem_var = ''
+     var.set('')
+
+if __name__ == '__main__':
+     win=Tk()
+
+     win.configure(background='red')
+     win.title('Gui Calculater')
+     # win.geometry('500x250')
+     win.maxsize(400,250)
+     
+     var=StringVar()
+     entry=ttk.Entry(win,textvariable=var)
+     entry.grid(columnspan=4,ipadx=70)
+
+     btn1=Button(win,text='1',fg='white',bg='black',command=lambda :prass(1),height=1,width=7)
+     btn1.grid(row=2,column=0)
+
+     btn2=Button(win,text='2',fg='white',bg='black',command=lambda :prass(2),height=1,width=7)
+     btn2.grid(row=2,column=1)
+
+     btn3=Button(win,text='3',fg='white',bg='black',command=lambda :prass(3),height=1,width=7)
+     btn3.grid(row=2,column=2)
+
+     btn4=Button(win,text='4',fg='white',bg='black',command=lambda :prass(4),height=1,width=7)
+     btn4.grid(row=3,column=0)
+
+     btn5=Button(win,text='5',fg='white',bg='black',command=lambda :prass(5),height=1,width=7)
+     btn5.grid(row=3,column=1)
+
+     btn6=Button(win,text='6',fg='white',bg='black',command=lambda :prass(6),height=1,width=7)
+     btn6.grid(row=3,column=2)
+
+     btn7=Button(win,text='7',fg='white',bg='black',command=lambda :prass(7),height=1,width=7)
+     btn7.grid(row=4,column=0)
+
+     btn8=Button(win,text='8',fg='white',bg='black',command=lambda :prass(8),height=1,width=7)
+     btn8.grid(row=4,column=1)
+
+     btn9=Button(win,text='9',fg='white',bg='black',command=lambda :prass(9),height=1,width=7)
+     btn9.grid(row=4,column=2)
+
+     btn0=Button(win,text='0',fg='white',bg='black',command=lambda :prass(0),height=1,width=7)
+     btn0.grid(row=5,column=0)
+
+     plus=Button(win,text='+',fg='white',bg='black',command=lambda :prass('+'),height=1,width=7)
+     plus.grid(row=2,column=3)
+
+     minus=Button(win,text='-',fg='white',bg='black',command=lambda: prass('-'),height=1,width=7)
+     minus.grid(row=3,column=3)
+
+     multiplication=Button(win,text='*',fg='white',bg='black',command=lambda :prass('*'),height=1,width=7)
+     multiplication.grid(row=4,column=3)
+
+     divise=Button(win,text='/',fg='white',bg='black',command=lambda :prass('/'),height=1,width=7)
+     divise.grid(row=5,column=3)
+
+     equal=Button(win,text='=',fg='white',bg='black',command=equlprass,height=1,width=7)
+     equal.grid(row=5,column=2)
+
+     clear=Button(win,text='clear',fg='white',bg='black',command=clear,height=1,width=7)
+     clear.grid(row=5,column=1)
+
+     dasimul=Button(win,text='.',fg='white',bg='black',command=lambda :prass('.'),height=1,width=7)
+     dasimul.grid(row=6,column=0)
+
+     win.mainloop()</code></pre>
                </li>
                 <li class="video-1">
                     <h1 class="s-h1">source code 15</h1>
@@ -34,8 +119,39 @@
                     -step for create this program:-  <br>
                        1.first dising for loyut for calender <br>
                        2.then enter the code for create calender <br>
-                    <span class="text-red">=>open code</span>
-                    <a href="/status code/status15.html" class="far fa-file-pdf text-red" target="_blank"></a>
+                    <span class="text-red">=>source code 15 python coding</span>
+                    <pre class="language-python"><code>from tkinter import *
+import calendar
+
+def scale():
+     win2=Tk()
+     win2.config(background='white')
+     win2.title('CALENDER')
+     win2.geometry('700x600')
+     fact_year=int(entry.get())
+     cal_count=calendar.calendar(fact_year)
+     cal_year=Label(win2,text=cal_count,font='Consolas 10 bold')
+     cal_year.grid(row=5,column=1)
+     win2.mainloop()
+
+if __name__ == '__main__':
+     win=Tk()
+     win.config(background='white')
+     win.geometry('250x350')
+     win.title('CALENDER')
+
+     label1=Label(win,text='CALENDER',bg='dark gray',font=('times',28,'bold'))
+     label2=Label(win,text='enter year',bg='green',font='times')
+     entry=Entry(win,width=20)
+     btn1=Button(win,text='Show Calender',bg='red',command=scale)
+     btn2=Button(win,text='Exit',bg='red',command=exit)
+
+     label1.grid(row=0,column=1)
+     label2.grid(row=1,column=1)
+     entry.grid(row=2,column=1)
+     btn1.grid(row=3,column=1)
+     btn2.grid(row=4,column=1)
+     win.mainloop()</code></pre>
                </li>
                <li class="video-1">
                     <h1 class="s-h1">source code 18</h1>
@@ -50,8 +166,212 @@
                     img smart-phon 3=> <span class="text-red"><a href="https://drive.google.com/file/d/1yH5GK0K9Vp2xR-5WzHxHptNsLPNGLYen/view?usp=sharing" target="_blank">https://drive.google.com/file/d/1yH5GK0K9Vp2xR-5WzHxHptNsLPNGLYen/view?usp=sharing</a></span> <br>
                     img smart-phon 4=> <span class="text-red"><a href="https://drive.google.com/file/d/1utbzWdiKLtX5ZhjXa14sU3i7BPYLH3Yv/view?usp=sharing" target="_blank">https://drive.google.com/file/d/1utbzWdiKLtX5ZhjXa14sU3i7BPYLH3Yv/view?usp=sharing</a></span> <br>
                     img background 5=> <span class="text-red"><a href="https://drive.google.com/file/d/1Gq5DJ1jhIuGKX5blly82iLbUnBjlvoAQ/view?usp=sharing" target="_blank">https://drive.google.com/file/d/1Gq5DJ1jhIuGKX5blly82iLbUnBjlvoAQ/view?usp=sharing</a></span> <br>
-                    <span class="text-red">=>open code</span>
-                    <a href="/status code/status18.html" class="far fa-file-pdf text-red" target="_blank"></a>
+                    <span class="text-red">=>source code 18 html coding</span>
+                    <pre class="language-html"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+     &lt;meta charset="UTF-8"&gt;
+     &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+     &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+     &lt;link rel="stylesheet" href="project1.css"&gt;
+     &lt;title&gt;Mobil shop1&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+     &lt;header&gt;
+          &lt;div class="container"&gt;
+               &lt;h1 class="logo text-whit"&gt;hp&lt;/h1&gt;
+               &lt;div class="main-contain"&gt;
+                    &lt;p class="p-contain text-red"&gt;This webpag is contant shell smart-phone,&lt;br&gt;
+                    descount wiht smart-phone,&lt;br&gt;
+                    go to by smart-phone now&lt;/p&gt;
+               &lt;/div&gt;
+               &lt;div class="form"&gt;
+                    &lt;form action=""&gt;
+                    &lt;label for="Name"&gt;Name&lt;/label&gt;
+                    &lt;input type="text" name="Name" id="Name" required&gt;&lt;br&gt;
+
+                    &lt;label for="Email"&gt;Email&lt;/label&gt;
+                    &lt;input type="text" name="Email" id="Email" required&gt;&lt;br&gt;
+
+                    &lt;label for="Co.Number"&gt;Co.number&lt;/label&gt;
+                    &lt;input type="text" name="Co.Number" id="Co.Number" required&gt;&lt;br&gt;
+
+                    &lt;label for="Phone name"&gt;Phone name&lt;/label&gt;
+                    &lt;input type="text" name="Phone name" id="Phone name" required&gt;&lt;br&gt;
+
+                    &lt;input class='button text-green' type="submit" value="bay now"&gt;
+                    &lt;/form&gt;
+                    
+               &lt;/div&gt;
+               &lt;div class="head-photo"&gt;
+                    &lt;div class="photo photo1"&gt;
+                    &lt;img src="./apple.png" alt="this photo is sell phone"&gt;
+                    &lt;div class="photo1-ditail"&gt;
+                         &lt;p class="text-whit"&gt;Name=iphone 12 and pro 5G&lt;/p&gt;
+                         &lt;p class="text-whit"&gt;Rame=6GB&lt;/p&gt;
+                         &lt;p class="text-whit"&gt;Storage=128GB&lt;/p&gt;
+                         &lt;p class="text-red"&gt;Price=1,00,000&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="photo photo2"&gt;
+                         &lt;img src="./oppo.png" alt="this photo is sell phone"&gt;
+                              &lt;div class="photo2-ditail"&gt;
+                         &lt;p class="text-whit"&gt;Name=oppo A31&lt;/p&gt;
+                         &lt;p class="text-whit"&gt;Rame=6GB&lt;/p&gt;
+                         &lt;p class="text-whit"&gt;Storage=128GB&lt;/p&gt;
+                         &lt;p class="text-red"&gt;Price=12,490&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="photo photo3"&gt;
+                         &lt;img src="./Redmi.png" alt="this photo is sell phone"&gt;
+                              &lt;div class="photo3-ditail"&gt;
+                         &lt;p class="text-whit"&gt;Name=Mi 10i 5G&lt;/p&gt;
+                         &lt;p class="text-whit"&gt;Rame=8GB&lt;/p&gt;
+                         &lt;p class="text-whit"&gt;Storage=128GB&lt;/p&gt;
+                         &lt;p class="text-red"&gt;Price=21,990&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="photo photo4"&gt;
+                         &lt;img src="./vivo.png" alt="this photo is sell phone"&gt;
+                              &lt;div class="photo4-ditail"&gt;
+                         &lt;p class="text-whit"&gt;Name=vivo V21e 5G&lt;/p&gt;
+                         &lt;p class="text-whit"&gt;Rame=8GB&lt;/p&gt;
+                         &lt;p class="text-whit"&gt;Storage=128GB&lt;/p&gt;
+                         &lt;p class="text-red"&gt;Price=24,990&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;/div&gt;
+               &lt;/div&gt;
+
+          &lt;/div&gt;
+     &lt;/header&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                    <span class="text-red">=>source code 18 css coding</span>
+                    <pre class="language-css"><code>*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+.text-whit{
+     color: #fff;
+}
+.text-red{
+     color: red;
+}
+.text-green{
+     color: green;
+}
+.container{
+     /* border: 2px solid blue; */
+     width: 85%;
+     margin: 0 auto;
+}
+/* ################ coding of imag ################## */
+header{
+     height: 100vh;
+     width: 100%;
+     background: linear-gradient(rgb(0,0,0,0.6),rgb(0,0,0,0.6)),url('./pexels-pixabay-531880.jpg');
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     position: relative;
+}
+.main-contain{
+     display:inline-block;
+}
+.p-contain{
+     font-size: 1.5rem;
+     font-weight: 700;
+     letter-spacing: 0.1rem;
+     padding-top: 2rem;
+     margin-left: 1rem;
+     
+}
+
+/* ###################### form coding ##############  */
+.form{
+     float: right;
+     color: #fff;
+     font-size: 1.5rem;
+     margin-top: 5rem;
+     width: 40%;
+}
+form::after{
+     contain: '';
+     display: block;
+     clear: both;
+}
+label{
+     margin-bottom: 1rem;
+}
+input{
+     margin-bottom: 1rem;
+     width: 60%;
+     border: 2px solid red;
+}
+.button{
+     width: 20%;
+     border-radius: 20%;
+     height: 4vh;
+}
+
+/* ######################### apple phon #########################  */
+.photo1 img{
+     border: 2px solid #fff;
+     border-radius: 10%;
+     margin-top: 3rem;
+     margin-left: 1rem;
+     height: 180px;
+}
+.photo1-ditail{
+     float: right;
+     margin-top: 5rem;
+     margin-right: 10rem;
+     font-size: 1.4rem;
+}
+/* ######################### oppo phon #########################  */
+.photo2{
+     float: left;
+}
+.photo2 img{
+     
+     border-radius: 10%;
+     margin-top: 3rem;
+     margin-left: 10rem;
+     height: 200px;
+}
+.photo2-ditail{
+     margin-left: 10rem;
+     font-size: 1.3rem;
+}
+/* ######################### mi phon #########################  */
+.photo3{
+     float: left;
+}
+.photo3 img{
+     border-radius: 10%;
+     margin-top: 3rem;
+     margin-left: 10rem;
+     height: 200px;
+}
+.photo3-ditail{
+     margin-left: 10rem;
+     font-size: 1.3rem;
+}
+/* ######################### vivo phon #########################  */
+.photo4{
+float: right;
+}
+.photo4 img{
+     border-radius: 10%;
+     margin-top: 3rem;
+     margin-right: 10rem;
+     height: 200px;
+}
+.photo4-ditail{
+     margin-right: 10rem;
+     font-size: 1.3rem;
+}</code></pre>
                </li>
                <li class="video-1">
                     <h1 class="s-h1">source code 20</h1>
@@ -61,8 +381,61 @@
                     -step for create this program:-  <br>
                     1.first dising loyut for color game use for Tk-inter library in python <br>
                     2.then ensert code <br>
-                    <span class="text-red">=>open code</span>
-                    <a href="/status code/status20.html" class="far fa-file-pdf text-red" target="_blank"></a>
+                    <span class="text-red">=>source code 20 python coding</span>
+                    <pre class="language-python"><code>from tkinter import *
+from tkinter import ttk
+import random
+
+colours=['Red','Blue','Green','Pint','Black','Yellow','Orange','White','Purple','Brown']
+scor=0
+timeleft=30
+
+def startgame(event):
+     if timeleft == 30:
+          coutndown()
+     netcolor()
+
+def netcolor():
+     global timeleft
+     global scor
+     if timeleft > 0:
+          entry.focus_set()
+          if entry.get().lower() == colours[1].lower():
+               scor += 1
+          entry.delete(0,END)          
+          random.shuffle(colours)
+          label2.config(foreground=str(colours[1]),text=str(colours[0]))
+          start.config(text='Score:'+str(scor))
+          
+def coutndown():
+     global timeleft
+     if timeleft > 0:
+          timeleft -= 1         
+          time.config(text='Time left'+str(timeleft))
+          time.after(1000,coutndown)
+
+win=Tk()
+win.title('COLORGAME')
+win.geometry('375x200')
+
+label=ttk.Label(win,text='Type in the of the words,and not the word text ! ',font='Helvetica 10')
+label.pack()
+
+start=ttk.Label(win,text='Press enter the start',font='Helvetica 10 bold')
+start.pack()
+
+time=ttk.Label(win,text='Time left:'+str(timeleft),font=('Helvetica',10))
+time.pack()
+
+label2=ttk.Label(win,font=('Helvetica',40))
+label2.pack()
+
+entry=ttk.Entry(win,width=20)
+win.bind('<Return>',startgame)
+entry.pack()
+entry.focus_set()
+
+win.mainloop()</code></pre>
                </li>
                <li class="video-1">
                     <h1 class="s-h1">source code 22</h1>
@@ -71,8 +444,102 @@
                     -This source code is use for create jarves program. <br>               
                     -there are one topice involve in this program  <br>
                     1. enter code <br>                  
-                    <span class="text-red">=>open code</span>
-                    <a href="/status code/status22.html" class="far fa-file-pdf text-red" target="_blank"></a>
+                    <span class="text-red">=>source code 22 python coding</span>
+                    <pre class="language-python"><code># from webbrowser import Chrome
+import pyttsx3
+import speech_recognition as sr
+import datetime
+import wikipedia
+import webbrowser
+import os
+import smtplib
+
+engine=pyttsx3.init('sapi5') #sapi5=get voice system
+voices = engine.getProperty('voices')
+print(voices[0].id)
+engine.setProperty('voice',voices[0].id)
+
+def speck(audio):
+     engine.say(audio)
+     engine.runAndWait()
+
+def wiseMe():
+     hour=int(datetime.datetime.now().hour)
+     if hour>=0 and hour&lt;12:
+          speck("Good Morninig")
+     elif hour>=12 and hour&lt;18:
+          speck("Good Afternoon!")
+     else:
+          speck("Good Evening")
+     speck("hello sir i am jarvesh 2.0 . what i can halp you")
+
+def takeCommand():
+     r=sr.Recognizer()
+     with sr.Microphone() as source:
+          print("listninig...")
+          # r.pause_threshold = 1
+          audio = r.listen(source) 
+     try:
+          print("Recogninzing....")
+          qurey = r.recognize_google(audio)
+          print(f"user said : {qurey}\n")
+     except Exception as e:
+          print(e)
+          print("say that agein please...")
+          return "none"
+     return qurey
+
+def sendEmail(to,content):
+     server=smtplib.SMTP("smtp.gmail.com",587)
+     server.ehlo()
+     server.starttls()
+     server.login('Your Email ','your Email password')
+     server.sendmail('Your Email',to,content)
+     server.close()
+
+if __name__=="__main__":
+     wiseMe()
+     while True:
+          #logice for executing tasks based on query
+          qurey=takeCommand().lower()
+          if 'wikipedia' in qurey:
+               speck('searching Wikipidia.....')
+               qurey=qurey.replace("wikipedia","")
+               results=wikipedia.summary(qurey,sentences=2)
+               speck("According to wikipedia")
+               print(results)
+               speck(results)
+
+          elif 'open youtube' in qurey:
+               # webbrowser.open("https://www.youtube.com/")
+               webbrowser.open("youtube.com")
+          elif 'open google' in qurey:
+               webbrowser.open("google.com")    
+          elif 'open stack overflow' in qurey:
+               webbrowser.open("stackoverflow.com")
+          elif 'open python' in qurey:
+               webbrowser.open('http://www.python.org')
+          elif 'patel youtube channel' in qurey:
+               webbrowser.open('https://www.youtube.com/channel/UCvMZIzMIprZ2IfYypoDBUiA')   
+          elif 'play song' in qurey:
+               mus_dir='B:\\youtub\\adio\\music'
+               song=os.listdir(mus_dir)
+               print(song)
+               os.startfile(os.path.join(mus_dir,song[0]))     
+          elif 'the time ' in qurey:
+               str_time=datetime.datetime.now().strftime("%H:%M:%S")
+               print(str_time)
+               speck(f"sir,the time is {str_time}")      
+          elif 'send email to patel' in qurey:
+               try:
+                    speck('What should i say')
+                    content=takeCommand()
+                    to='youremail'
+                    sendEmail(to,content)
+                    speck("Email has been send")
+               except Exception as e:
+                    print(e)
+                    speck("sorry setu patel,i am not send your Email")</code></pre>
                </li>
                <li class="video-1">
                     <h1 class="s-h1">source code 23</h1>
@@ -82,8 +549,158 @@
                     -there are two topice involve in this program:-  <br>
                     1. first create loyut<br>
                     2. enter code <br>                  
-                    <span class="text-red">=>open code</span>
-                    <a href="/status code/status23.html" class="far fa-file-pdf text-red" target="_blank"></a>
+                    <span class="text-red">=>source code 23 python coding</span>
+                    <pre class="language-python"><code>#import module
+from tkinter import *
+import tkinter as tk
+from tkinter import colorchooser 
+import os,shutil
+from tkinter.ttk import Combobox
+from tkinter import messagebox as m_box
+
+# use tkinter library 
+win=Tk()
+win.title("set files")
+win.geometry('1100x800')
+
+# crate folder function 
+def createfolder(folder):
+     if not os.path.exists(folder):
+          os.makedirs(folder)
+
+# this fuction is used to file move in folder
+def folder_move(folderName,files):      
+     for f in files:
+          shutil.move(f, f'{folderName}')
+
+# main fuction this program
+def getColor():
+     # set bakground color for window 
+     color = colorchooser.askcolor(title='') 
+     print(color[1])
+     win.configure(background=color[1])
+     
+     tk.Label(win,text="File set in folder",width=20,borderwidth=10,relief='solid', background=color[1],fg='white',font=('Arial',40)).grid(row=2,column=15,padx=20,pady=10)
+     
+     # massege 
+     tk.Label(win,text="Select folder ",width=15, background=color[1],fg='white',font=('Arial',30)).grid(row=4,column=15,padx=20,pady=10)
+     
+     # create combobox for folder name 
+     folder_var=StringVar()
+     combo=Combobox(win,width=20,textvariable=folder_var,height=30,state='readonly',font=15)
+     combo['value']=('medias','document','picture','others')
+     combo.current(0)
+     combo.grid(row=5,column=15,padx=0,pady=30)
+     
+     #create folder
+     def var():
+          if folder_var.get() == 'medias':
+               createfolder('medias')      
+          if folder_var.get() == 'document':
+               createfolder('document')
+          if folder_var.get() == 'picture':
+               createfolder('picture')
+          if folder_var.get() == 'others':
+               createfolder('others') 
+     tk.Button(text="Create folder",background='red',font=15,command=var).grid(row=15,column=15)
+     
+     # show folder list in message box
+     files=os.listdir()
+     files.remove('fileset.py')
+     mas=Message(win,text=files,font='Arial 15')
+     mas.grid(row=18,column=15,padx=0,pady=5)
+
+     #file move for depended extetntion  
+     # medias folder
+     music=[".mp3",".mp4",".wav",".flv"]
+     music_f=[file for file in files if os.path.splitext(file)[1].lower() in music]
+     tk.Label(win,text=music,font='Arial 15').grid(row=20,column=10,pady=5,padx=0)
+     
+     #move file in medias folder
+     def move_music():
+          if os.path.exists(folder_var.get()):
+               if folder_var.get() == 'medias':
+                    folder_move('medias',music_f)
+               if folder_var.get() == 'document':
+                    folder_move('document',music_f)
+               if folder_var.get() == 'picture':
+                    folder_move('picture',music_f)
+               if folder_var.get() == 'others':
+                    folder_move('others',music_f)
+          else:
+               m_box.showerror('title','first not create folder for first position in combobox')
+     tk.Button(text="move medias file",background='red',font=15,command=move_music).grid(row=22,column=10) 
+          
+     #file move for depended extetntion  
+     #documetn folder  
+     dox=[".txt",".docx",".doc",".pdf"]
+     documet=[file for file in files if os.path.splitext(file)[1].lower() in dox]
+     tk.Label(win,text=dox,font='Arial 15').grid(row=20,column=15,pady=5,padx=0)
+     
+     #move file in document folder
+     def move_dox():
+          if os.path.exists(folder_var.get()):
+               if folder_var.get() == 'medias':
+                    folder_move('medias',documet)
+               if folder_var.get() == 'document':
+                    folder_move('document',documet)
+               if folder_var.get() == 'picture':
+                    folder_move('picture',documet)
+               if folder_var.get() == 'others':
+                    folder_move('others',documet)
+          else:
+               m_box.showerror('title','first not create folder for first position in combobox')
+     
+     tk.Button(text="move documetn file",background='red',font=15,command=move_dox).grid(row=22,column=15) 
+     
+     #file move for depended extetntion  
+     #picture folder
+     img=[".png",".jpg",'.jpeg']
+     img_m=[file for file in files if os.path.splitext(file)[1].lower() in img]
+     tk.Label(win,text=img,font='Arial 15').grid(row=20,column=17,pady=5,padx=0)
+     
+     # move image file in picture folder 
+     def move_img():
+          if os.path.exists(folder_var.get()):
+               if folder_var.get() == 'medias':
+                    folder_move('medias',img_m)
+               if folder_var.get() == 'document':
+                    folder_move('document',img_m)
+               if folder_var.get() == 'picture':
+                    folder_move('picture',img_m)
+               if folder_var.get() == 'others':
+                    folder_move('others',img_m)
+          else:
+               m_box.showerror('title','first not create folder for first position in combobox')
+     tk.Button(text="move imag file",background='red',font=15,command=move_img).grid(row=22,column=17) 
+     
+     #file move for depended extetntion  
+     #others folder
+     others=[]
+     for file in files:
+          ext=os.path.splitext(file)[1].lower()
+          if (ext not in music) and (ext not in dox) and (ext not in img) and os.path.isfile(file):
+               others.append(file) 
+     tk.Label(win,text="others",font='Arial 15').grid(row=24,column=15,pady=5,padx=5)
+     
+     # move other file in others folder 
+     def move_others():
+          if os.path.exists(folder_var.get()):
+               if folder_var.get() == 'medias':
+                    folder_move('medias',others)
+               if folder_var.get() == 'document':
+                    folder_move('document',others)
+               if folder_var.get() == 'picture':
+                    folder_move('picture',others)
+               if folder_var.get() == 'others':
+                    folder_move('others',others)
+          else:
+               m_box.showerror('title','first not create folder for first position in combobox')
+     tk.Button(text="move other file",background='red',font=15,command=move_others).grid(row=25,column=15,pady=5,padx=10) 
+     
+tk.Button(text='Select Color', command=getColor,width=15,height=1,bg='red',fg='blue',font=50).grid(row=0,column=10)
+
+win.mainloop()</code></pre>
                </li>
                <li class="video-1">
                     <h1 class="s-h1">source code 26</h1>
@@ -94,8 +711,115 @@
                     -there are two topice involve in this program  <br>
                     1. first create loyut<br>
                     2. enter code <br>                   
-                    <span class="text-red">=>open code</span>
-                    <a href="/status code/status26.html" class="far fa-file-pdf text-red" target="_blank"></a>
+                    <span class="text-red">=>source code 26 python coding</span>
+                    <pre class="language-python"><code>from tkinter import *
+from tkinter import messagebox
+
+def clear():
+     dayentry.delete(0,END)
+     monthentry.delete(0,END)
+     yearentry.delete(0,END)
+     givandayentry.delete(0,END)
+     givanmonthentry.delete(0,END)
+     givanyearentry.delete(0,END)
+     ryearentry.delete(0,END)
+     rmonthentry.delete(0,END)
+     rdayentry.delete(0,END)
+
+def chackerror():
+     if (dayentry.get()== '' or monthentry.get()=='' or yearentry.get()=='' or givandayentry.get()=='' or
+          givanmonthentry.get() == '' or givanyearentry.get() == ''):
+          messagebox.showerror('Input Error','please tyep your age')
+          clear()
+          return -1
+
+def ageresult():
+     value=chackerror()
+
+     if value == -1:
+          return
+     else:
+          birth_day=int(dayentry.get())
+          birth_month=int(monthentry.get())
+          birth_year=int(yearentry.get())
+
+          curren_day=int(givandayentry.get())
+          curren_month=int(givanmonthentry.get())
+          curren_year=int(givanyearentry.get())
+          
+          mont=(31,28,31,30,31,30,31,31,30,31,30,31)
+          if (birth_day > curren_day):
+               curren_month=curren_month-1
+               curren_day=curren_day+mont(birth_month-1)
+          
+          if (birth_month > curren_month):
+               curren_year=curren_year-1
+               curren_month=curren_month+12
+
+          calculat_day=curren_day-birth_day
+          calculat_month=curren_month-birth_month
+          calculat_year=curren_year-birth_year
+
+          rdayentry.insert(10,str(calculat_day))
+          rmonthentry.insert(10,str(calculat_month))
+          ryearentry.insert(10,str(calculat_year))
+
+if __name__ == '__main__':
+     win=Tk()
+     win.config(background='light green')
+     win.title('Age Calculaor')
+
+     dateofbirth=Label(win,text='Date Of Birth',background='blue',font='Airal',foreground='white')
+     givandate=Label(win,text='Given Date',background='blue',font='Arial',foreground='white')
+
+     day=Label(win,text='Day',font='Arial',background='light green')
+     month=Label(win,text='Month',font='Arial',background='light green')
+     year=Label(win,text='Year',font='Arial',background='light green')
+
+     givanday=Label(win,text='Given Day',font='Arial',background='light green')
+     givanmonth=Label(win,text='Given Month',font='Arial',background='light green')
+     givanyear=Label(win,text='Given Year',font='Arial',background='light green')
+     
+     resultage=Button(win,text='Resultant Age',fg='black',bg='red',command=ageresult)
+     ryear=Label(win,text='Years',background='light green',font='Arial')
+     rmonth=Label(win,text='Month',background='light green',font='Arial')
+     rday=Label(win,text='Day',background='light green',font='Arial')
+     clearall=Button(win,text='Clear All',fg='black',bg='red',command=clear)
+
+     dayentry=Entry(win,width=20)
+     monthentry=Entry(win,width=20)
+     yearentry=Entry(win,width=20)
+     givandayentry=Entry(win,width=20)
+     givanmonthentry=Entry(win,width=20)
+     givanyearentry=Entry(win,width=20)
+     ryearentry=Entry(win,width=20)
+     rmonthentry=Entry(win,width=20)
+     rdayentry=Entry(win,width=20)
+
+     dateofbirth.grid(row=0,column=1)
+     givandate.grid(row=0,column=4)
+     day.grid(row=1,column=0,padx=1,pady=1)
+     dayentry.grid(row=1,column=1,padx=1,pady=1)
+     month.grid(row=2,column=0,pady=1,padx=1)
+     monthentry.grid(row=2,column=1,pady=1,padx=1)
+     year.grid(row=3,column=0,padx=1,pady=1)
+     yearentry.grid(row=3,column=1,padx=1,pady=1)
+     givanday.grid(row=1,column=3,pady=1,padx=1)
+     givandayentry.grid(row=1,column=4,pady=1,padx=1)
+     givanmonth.grid(row=2,column=3,padx=1,pady=1)
+     givanmonthentry.grid(row=2,column=4,padx=1,pady=1)
+     givanyear.grid(row=3,column=3,pady=1,padx=1)
+     givanyearentry.grid(row=3,column=4,pady=1,padx=1)
+     resultage.grid(row=4,column=3,padx=1,pady=1)
+     ryear.grid(row=5,column=3,pady=1,padx=1)
+     ryearentry.grid(row=6,column=3,padx=1,pady=1)
+     rmonth.grid(row=7,column=3,padx=1,pady=1)
+     rmonthentry.grid(row=8,column=3,pady=1,padx=1)
+     rday.grid(row=9,column=3,pady=1,padx=1)
+     rdayentry.grid(row=10,column=3,padx=1,pady=1)
+     clearall.grid(row=11,column=3,pady=1,padx=1)
+     
+     win.mainloop()</code></pre>
                </li>
                <li class="video-1">
                     <h1 class="s-h1">source code 27</h1>
@@ -106,8 +830,75 @@
                     -there are two topice involve in this program  <br>
                     1. first create loyut<br>
                     2. enter code <br>                   
-                    <span class="text-red">=>open code</span>
-                    <a href="/status code/status27.html" class="far fa-file-pdf text-red" target="_blank"></a>
+                    <span class="text-red">=>source code 27 python coding</span>
+                    <pre class="language-python"><code>#####shrch find charcter
+from tkinter import *
+from tkinter import ttk
+win=Tk()
+# win.geometry('500x800')
+# pdb.set_trace()s
+label_fram=ttk.Frame(win)
+label=ttk.Label(label_fram,text='Text to find').pack(side=LEFT)
+entry=ttk.Entry(label_fram,width=20)
+entry.pack(side=LEFT,fill=BOTH,expand=1)
+entry.focus_set()
+btn=Button(label_fram,text='Find')
+btn.pack(side=RIGHT)
+label_fram.pack(side=TOP)
+text=Text(win)
+text.insert('1.0','''type your text''')
+text.pack(side=BOTTOM)
+def find():
+
+     text.tag_remove('found','1.0',END)
+     s=entry.get()
+     if s:
+          idx='1.0'
+          while 1:
+               idx=text.search(s,idx,nocase=1,stopindex=END)
+               if not idx: break
+               listindx='%s+%dc'%(idx,len(s))
+               text.tag_add('found',idx,listindx)
+               idx=listindx
+          text.tag_config('found',foreground='red')
+     entry.focus_set()
+btn.config(command=find)
+
+win.mainloop()
+
+### chacky
+from tkinter import *
+from tkinter import ttk
+win=Tk()
+
+def checkkey(event):
+     value=event.widget.get()
+     print(value)
+     if value == '':
+          data= l
+     else:
+          data=[]
+          for item in l:
+               if value.lower() in item.lower():
+                    data.append(item)
+     update(data)
+
+def update(data):
+     lb.delete(0,'end')
+
+     for item in data:
+          lb.insert('end',item)
+
+l=('c','c++','Java','Python','Perl','PHP','ASP','JS')
+e=ttk.Entry(win)
+e.pack()
+e.bind('&lt;KeyRelease>',checkkey)
+# e.bind('&lt;KeyRelease>',checkkey)
+
+lb=Listbox(win)
+lb.pack()
+update(l)
+win.mainloop()</code></pre>
                </li>
                <li class="video-1">
                     <h1 class="s-h1">source code 31</h1>
@@ -122,8 +913,105 @@
                     img 3=><span class="text-red"><a href="https://drive.google.com/file/d/1DWfNGtVoT2xQtrs2z7YN2GZ0k2U2auQC/view?usp=sharing" target="_blank">https://drive.google.com/file/d/1DWfNGtVoT2xQtrs2z7YN2GZ0k2U2auQC/view?usp=sharing</a></span> <br>
                     img 4=><span class="text-red"></span> <br>
                     2. enter code<br>                   
-                    <span class="text-red">=>open code</span>
-                    <a href="/status code/status31.html" class="far fa-file-pdf text-red" target="_blank"></a>
+                    <span class="text-red">=>source code 31 html coding</span>
+                    <pre class="language-html"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+     &lt;meta charset="UTF-8"&gt;
+     &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+     &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+     &lt;link rel="stylesheet" href="index.css"&gt;
+     &lt;title&gt;Maha Shivaratri&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+     &lt;div class="container"&gt;
+          &lt;input type="button" value="Maha Shivaratri"&gt;
+
+          &lt;div class="img img1"&gt;    
+               &lt;img src="img4.jpg" alt="This imag is a Shivji"&gt;     
+          &lt;/div&gt; 
+
+          &lt;div class="img img2"&gt;
+               &lt;img src="img2.jpg"  alt="This imag is a Shivji"&gt;
+               &lt;img src="img3.jpg" class="img2-1" alt="This imag is a Shivji"&gt;     
+          &lt;/div&gt;
+
+     &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+               </li>
+                    <li class="video-1">
+                    <span class="text-red">=>source code 31 css coding</span>
+                    <pre class="language-css"><code>*{
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     background-color: black;
+}
+.container{
+     width: 90%;
+     margin: 0 auto;
+}
+.container  input{
+     color: white;
+     font-size: 3.5rem;
+     margin: auto;
+     background: #d13535;
+     width: 45%;
+     text-align: center;
+     letter-spacing: 0.4rem;
+     border-radius: 16%;
+     font-family: -webkit-body;
+     border: 3px solid whitesmoke;
+     border-radius: 47%;
+     margin: 0 auto;
+     display: block;
+     margin-top: 1rem;
+     font-style: oblique;
+     font-weight: bold;
+}
+.container input:hover{
+     background-color: whitesmoke;
+     color: red;
+}
+.container .img1{
+     padding-top: 1rem;
+     transform: translateY(300%);
+     transition: all 0.3s ease-in-out;
+}
+     .container .img2{
+     padding-top: 1rem;
+     transform: translateX(140%);
+     transition: all 0.3s ease-in-out;
+
+}
+.container .img2-1 {
+     margin-left: 60%; 
+}
+.container .img1 img{
+     width: 250px;
+     height: 258px;
+     position: center;
+     border: 3px solid whitesmoke;
+     border-radius: 20%;
+     margin: 0 auto;
+     display: block;
+}
+.container .img2 img{
+     width: 245px;
+     height: 330px;
+     position: center;
+     border: 3px solid whitesmoke;
+     border-radius: 20%;
+}
+.container  input[type="button"]:hover ~ .img1{
+     transform: translate(0);
+     display: block;
+}
+.container  input[type="button"]:hover ~ .img2{
+     transform: translate(0);
+     display: block;
+}</code></pre>
                </li>
            </ul>
         </div>
