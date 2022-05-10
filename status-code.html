@@ -1785,6 +1785,170 @@ setTimeout(() => {
      str2.appendChild(create_img2)[0]; 
      }, 5000);</code></pre>
                </li>
+               <li class="video-1">
+                    <h1 class="s-h1">source code 37</h1>
+                    This is status videoNo 37 source code. <br>
+                    -This is source code for html-css and java-script. <br> 
+                    -This source code is use for create best Umiya Ma webpage. <br>             
+                    -there are two topice involve in webpage.  <br>
+                    1. downlod Umiya Ma imges for given link :-<br>
+                    img 1=><span class="text-red"><a href="https://drive.google.com/file/d/1fhKLYA8Iu-AgJFFSqDe4Pba-ssGOl3l_/view?usp=sharing" target="_blank">https://drive.google.com/file/d/1fhKLYA8Iu-AgJFFSqDe4Pba-ssGOl3l_/view?usp=sharing</a></span> <br>
+                    img 2=><span class="text-red"><a href="https://drive.google.com/file/d/1YD4av0QBSdEtaSKKqJlCxDii6UqkYr2k/view?usp=sharing" target="_blank">https://drive.google.com/file/d/1YD4av0QBSdEtaSKKqJlCxDii6UqkYr2k/view?usp=sharing</a></span> <br>
+                    2. enter code<br>                   
+                    <span class="text-red">=>source code 37 html coding</span>
+                    <pre class="language-html"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+     &lt;meta charset="UTF-8"&gt;
+     &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+     &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+     &lt;!-- include css file  --&gt;
+     &lt;link rel="stylesheet" href="./Umiya.css"&gt;
+     &lt;title&gt;Umiya Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+     &lt;div id="Umiya_div"&gt;
+          &lt;div id="Umiya_Number"&gt;
+          &lt;/div&gt;
+
+          &lt;div id="Umiya_img"&gt;    
+               &lt;h1 id="Umiya_h1"&gt;&lt;/h1&gt;
+          &lt;/div&gt;
+     &lt;/div&gt;
+&lt;/body&gt;
+&lt;!-- include java-script file  --&gt;
+&lt;script src="./Umiya.js"&gt;&lt;/script&gt;
+
+&lt;/html&gt;</code></pre>
+               </li>
+                    <li class="video-1">
+                    <span class="text-red">=>source code 37 css coding</span>
+                    <pre class="language-css"><code>*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+#Umiya_div{
+  background-color: blue;
+  height: 100vh;
+  color: yellow;
+  text-align: center;
+}
+#Umiya_number1,
+#Umiya_number2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}</code></pre>
+               </li>
+                    <li class="video-1">
+                    <span class="text-red">=>source code 37 java-script coding</span>
+                    <pre class="language-javascript"><code>// get div that is id for Umiya_img 
+let Umiya_div = document.getElementById('Umiya_Number');
+
+//creat new element that is h1 
+let create_h1 = document.createElement('h1');
+// add css for new create h1 element use for java-script
+create_h1.style.position = 'absolute';
+create_h1.style.top = '50%';
+create_h1.style.left = '50%';
+create_h1.style.fontSize = '35rem'
+create_h1.style.transform = 'translate(-50%,-50%)';
+
+// the new element h1 is append in div(#Umiya_Number)
+Umiya_div.appendChild(create_h1);
+
+setTimeout(() => {
+     // add text in new element h1 
+     create_h1.innerText = '3';
+     Umiya_div.appendChild(create_h1);
+}, 1000);
+setTimeout(() => {
+     create_h1.innerText = '2';
+     Umiya_div.appendChild(create_h1);
+}, 2500);
+setTimeout(() => {
+     create_h1.innerText = '1';
+     Umiya_div.appendChild(create_h1);
+}, 3500);
+setTimeout(() => {
+     Umiya_div.style.display = 'none';
+}, 4500);
+
+// get div and that is id is Umiya_img
+let Umiya_img = document.getElementById('Umiya_img');
+// creat new element img 
+let create_img = document.createElement('img');
+// given class for new element img  
+create_img.className = 'img';
+
+// add css new element img
+create_img.style.position = 'absolute';
+create_img.style.top = '-150%';
+create_img.style.left = '50%';
+create_img.style.height ='70%';
+create_img.style.borderRadius='2%'
+create_img.style.border = ' 5px solid red';
+create_img.style.transform = 'translate(-50%,-50%)';
+
+// add img-path in new element img
+create_img.src = './Umiya_img/HD-wallpaper-umiya-maa-temple-god-holy-place-temples.jpg';
+// The new element img is append in div(#Umiya_img)
+Umiya_img.appendChild(create_img);
+
+// creat new element img for second img 
+let create_img1 = document.createElement('img');
+// given class for new element second img  
+create_img1.className = 'img';
+
+// add css new element second img 
+create_img1.style.position = 'absolute';
+create_img1.style.top = '-150%';
+create_img1.style.left = '70%';
+create_img1.style.height ='26%';
+create_img1.style.width ='15%';
+create_img1.style.borderRadius='50%'
+create_img1.style.transform = 'translate(-50%,-50%)';
+create_img1.style.border = ' 5px solid red';
+
+// set img path for second img 
+create_img1.src = './Umiya_img/16237fde5d26a8e7d9a588e140ae5f91.jpg';
+// The second new element img is append in div(#Umiya_img)
+Umiya_img.appendChild(create_img1);
+
+setTimeout(() => {
+     create_img.style.top = '50%';  
+     create_img1.style.top = '30%'; 
+     // get h1 that is id for Umiya_h1 and it is invole in div(#Umiya_img)
+     let Umiya_h1 = document.getElementById('Umiya_h1');
+     // add text for h1(#Umiya_h1)
+     Umiya_h1.innerText = '🙏🙏Jay Umiya Ma🙏🙏';
+     Umiya_h1.style.fontSize = '3rem';
+     Umiya_h1.style.padding = '1.5rem'
+     Umiya_h1.style.color = ''
+}, 5000)</code></pre>
+               </li>
+               <!-- <li class="video-1">
+                    <h1 class="s-h1">source code 36</h1>
+                    This is status videoNo 36 source code. <br>
+                    -This is source code for html-css and java-script. <br> 
+                    -This source code is use for create best IPL webpage. <br>             
+                    -there are two topice involve in webpage.  <br>
+                    1. downlod 10 IPL team img in this folder use for google drive :-<br>
+                    img 1=><span class="text-red"><a href="https://drive.google.com/drive/folders/11-L9D_ausvFRIEtiCtkPSQFjxFEcAFG3?usp=sharing" target="_blank">https://drive.google.com/drive/folders/11-L9D_ausvFRIEtiCtkPSQFjxFEcAFG3?usp=sharing</a></span> <br>
+                    2. enter code<br>                   
+                    <span class="text-red">=>source code 36 html coding</span>
+                    <pre class="language-html"><code></code></pre>
+               </li>
+                    <li class="video-1">
+                    <span class="text-red">=>source code 36 css coding</span>
+                    <pre class="language-css"><code></code></pre>
+               </li>
+                    <li class="video-1">
+                    <span class="text-red">=>source code 36 java-script coding</span>
+                    <pre class="language-javascript"><code></code></pre>
+               </li> -->
            </ul>
         </div>
     </div>
