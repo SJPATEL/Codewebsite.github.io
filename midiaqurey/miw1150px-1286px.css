@@ -156,6 +156,25 @@
         font-size: 1.5rem;
         font-weight: 600;
     }
+
+    
+    .html-source1 .title {
+        font-size: 2.5rem;
+    }
+    .html-source1 .container .videos li h1 {
+        font-size: 2rem;
+    }
+    .html-source1 .container .videos li .s-h1 {
+        font-size: 2rem;
+        width: 20%;
+    }
+    .html-source1 .container .videos li {
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+    .html-source1 .container .videos li .code-toolbar pre code {
+        font-size: 1.5rem;
+    }
     .code .head-code {
         font-size: 2.5rem;
     }
