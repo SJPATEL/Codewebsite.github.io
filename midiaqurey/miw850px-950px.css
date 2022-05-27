@@ -1,0 +1,194 @@
+@media (min-width:850px) and (max-width:950px){
+    .header-container .logo {
+        font-size: 3rem;
+        margin-top: 1rem;
+        width: 100%;
+    }
+    .navbar2 h2 {
+        font-size: 2.2rem;
+    }
+    .navbar2 p{
+        font-size: 1.5rem;
+    }
+    .header-container .navbar input[type="checkbox"] {
+        top: 19px;
+        left: 44.3px;
+        height: 35px;
+    }
+    .header-container .navbar .box {
+        top: 8px;
+        left: 11px;
+        height: 27px;
+        width: 29px;
+    }
+    .header-container .navbar img {
+        height: 41px;        
+    }
+    .header-container .navbar ul li a {
+        font-size: 1.9rem;
+    }    
+
+    .code .c-head {
+        text-align: center;
+        font-size: 2.3rem;
+    }
+    .code p .span {
+        padding-left: 8rem;
+        font-size: 1.4rem;
+    }
+    .c-v a {
+        font-size: 11rem;
+        width: 17vw;
+        padding: 3rem 2rem;
+    }
+    .c-v h1 {
+        font-size: 2.5rem;
+    }
+    .c-code .container .c-button a {
+        font-size: 2rem;
+    }
+    .programs li {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+    .blog_container .blog-button a{
+        font-size: 1.5rem;
+    }
+    .c-p-body .h1-1 {
+        font-size: 1.9rem;
+    }
+    .c-p-body  .h1-1 .serch{
+        position: absolute;
+        top: 10px;
+        right: 0px;   
+    }
+    .c-p-body  .h1-1 .serch #SerchBar{
+        height: 25px;
+        width: 70%;
+        font-size: 2rem;
+    }
+    .c-p-body  .h1-1 .serch i{
+       color: whitesmoke;
+       font-size: 2rem;
+    }
+    .c-p-body .container .c-program h2{
+        font-size: 2rem;
+    }
+    .c-p-body .container .c-program li .code-toolbar pre{
+        font-size: 1.4rem;
+    }
+
+    .notes .container h1.title {
+        font-size: 2.3rem;
+        padding-bottom: 0rem;
+    }
+    .notes .container .note li h1.note-h1 {
+        font-size: 3rem;
+    }
+    .notes .container .note li p{
+        height: 37vh;
+        width: 46%;
+        margin: 0 auto;
+    }
+    .notes .container .note li p span{
+        font-size: 1.8rem;
+    }
+    .notes .container .note li p a{
+        font-size: 4rem;
+    }
+
+
+    .code .hc-code {
+        font-size: 2.3rem;
+    }
+    .hc-link a {
+        font-size: 12rem;
+        width: 19vw;
+        padding: 3rem 3rem
+    }
+    .hc-link h1 {
+        font-size: 2.5rem;
+    }
+    .html-css .container .html-button a {
+        font-size: 1.9rem;
+    }
+
+    .container-hp ul.main-program h2.h2-1 {
+        font-size: 2.2rem;
+    }
+    .container-hp .html-button a.text-red {
+        font-size: 1.9rem;
+    }
+    .container-hp ul.main-program p.p1 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        letter-spacing: 0.05rem;
+    }
+    .container-hp ul.main-program p.p1 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        letter-spacing: 0.05rem;
+    }
+    .container-hp ul.main-program ul.Program-ul li {
+        padding-bottom: -0.2rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .container-hp ul.main-program li a {
+        font-size: 1.5rem;
+        font-weight: 700;
+        letter-spacing: 0.1rem;
+    }
+    .container .P1-html-coding h1 {
+        font-size: 2rem;
+        letter-spacing: 0.1rem;
+        font-weight: bold;
+    }
+    .all-html-P .container .P1-html-coding  .code-toolbar pre code{
+        font-size: 1.2rem;
+    }
+
+    .html-source .title {
+        font-size: 2.5rem;
+    }
+    .html-source .container .videos li h1 {
+        font-size: 2rem;
+    }
+    .html-source .container .videos li .s-h1 {
+        font-size: 2rem;
+        width: 25%;
+    }
+    .html-source .container .videos li {
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+    .html-source .container .videos li .code-toolbar pre code {
+        font-size: 1.5rem;
+    }
+    .html-source .container .container1{
+        width: 19%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .html-source .container .container2{
+        width: 80%;
+    }
+    .code .head-code {
+        font-size: 2.5rem;
+    }
+    .status-v a {
+        font-size: 11rem;
+        width: 17vw;
+        padding: 3rem 2rem;
+    }
+    .status-v h1 {
+        font-size: 2.5rem;
+    } 
+    .code-status .container .status-button a {
+        font-size: 1.9rem;
+    }
+    .status-v {
+        height: 47vh;
+    }
+}
